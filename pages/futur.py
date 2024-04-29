@@ -8,4 +8,4 @@ st.write("""Aujourd'hui l'homme est arrivé au point ou nous arrivons à faire d
          travailler pour un constructeur automobile qui tenterait de construire des voitures autonome. 
          Aujourd'hui ma vision du monde automobile a énnormément changé, mais j'ai toujours le même rêve.
          C'est pourquoi j'ai décider de m'orienté vers un master d'ingénieur ia et que """)
-st.subheader("""JE CHERCHE UNE ALTERNANCE DANS LE MONDE DE L'AUTOMOBILE.""")
+st.subheader("""JE CHERCHE UNE ALTERNANCE DANS LE MONDE DE L'AUTOMOBILE. """)
