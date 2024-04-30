@@ -114,5 +114,5 @@ st.write(""" - En s’adaptant au niveau d’expertise, à la culture et au stat
         d'idée venais de moi.""")
 st.write("Compétence 4 : « Développer un outil décisionnel » (parcours VCOD)")
 st.write("""- Apprécier l’intérêt de l’utilisation d’un gestionnaire de versions de code
-        \nIl n'existe aucun développeur qui ne fait aucune erreur, dans notre cas nous avons utiliser git en controlant 
-        les commit en utilisant des branche parallèle.""")
+        \nIl n'existe aucun développeur qui ne fait aucune erreur, dans notre cas nous avons utiliser git pour controler
+        les commits en utilisant des branches parallèles.""")
