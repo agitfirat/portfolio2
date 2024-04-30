@@ -25,7 +25,7 @@ with tab1 :
     st.write("Compétence 2 « Analyser statistiquement des données »")
     st.write("""- En identifiant et en mettant en œuvre les techniques adaptées aux données complexes (données massives, 
                 données mal structurées, flux de données...)
-                \n-Prendre conscience des limites des méthodes classiques pour l’analyse des données complexes 
+                \n- Prendre conscience des limites des méthodes classiques pour l’analyse des données complexes 
                 (données massives, données mal structurées...)""")
     st.write("Compétence 3 : « Valoriser une production dans un contexte professionnel »")
     st.write("""- Savoir transformer la donnée pour la mettre en conformité avec des normes (anonymisation, normalisation)""")
