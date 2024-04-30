@@ -1,7 +1,7 @@
 import streamlit as st
  
 
-tab1, tab2, tab3 = st.tabs(["Développement et test d’un outil décisionnel", "Données JSON", "Owl"])
+tab1, tab2 = st.tabs(["Développement et test d’un outil décisionnel", "Données JSON"])
 
 with tab1 : 
     st.header("Développement et test d’un outil décisionnel")
