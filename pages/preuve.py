@@ -119,4 +119,4 @@ with tab1 :
 with tab2 : 
  st.header("Traiter des données sous format JavaScript Object Notation, JSON, réaliser en alternance")
  st.write("### Creer de nouvelles tables de données à partir des données brutes pour tester les nouvelles tables du système décisionnel.")
-st.write("Voici le format de données JSON :")
+ st.write("Voici le format de données JSON :")
