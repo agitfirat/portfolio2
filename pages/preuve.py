@@ -19,7 +19,6 @@ with tab1 :
     st.write("""- En intervenant à toutes les étapes du cycle de vie de la donnée (insertion, modification, extraction, suppression)
             \n- En utilisant le modèle de données adapté aux besoins
             \n- En traduisant correctement les demandes métier en programmes, avec le respect du cahier des charges s'il existe
-            \n- En écrivant un programme correctement structuré et documenté, respectant les bonnes pratiques
             \n- En identifiant les librairies et langages dédiés
             \n- Identifier les solutions technologiques permettant la collecte et la diffusion de données
             \n- Comprendre les spécificités des données complexes et de leur exploitation""")
@@ -120,3 +119,58 @@ with tab2 :
     st.header("Traiter des données sous format JavaScript Object Notation, JSON, réaliser en alternance")
     st.write("### Creer de nouvelles tables de données à partir des données brutes pour tester les nouvelles tables du système décisionnel.")
     st.write("Voici le format de données JSON :")
+    st.image("json.png")
+    st.write("""Le format que vous voyez au dessus est le format dans lequelle sont encoder nos données dans les tables brutes. Ces tables brutes ont des colonnes d'identifications, comme le numéro de sinistre ou 
+    la date du sinistre. Mais la colonne qui nous intéresse, est la colonne données de chacune de ses tables. Ces colonnes sont en JSON, soit une chaine de caractère respectant le format décrit au dessus. L'outil de 
+    traitement de données principal qui est à ma disposition en alternance est SAS Guide, cependant il est compliqué de traiter des données JSON avec SAS. En effet pour sas ils ne sont que des chaines de caractères, 
+    donc il faut chercher la position du champs qui nous interesse au sein de cette chaine de caractère, puis d'en extraire un certain nombre de caractère juste après la position du champs. Cependant cette méthode étant 
+    compliqué à mettre en place et demandant énnormément de ressources (certaines cellule peut dépassé le million de caractère) j'ai décidé d'utiliser python. J'ai utiliser la librairies JSON pour produire le code 
+    suivant :""")
+    st.write("""
+    def extract_sums(data):
+        if isinstance(data,type(None)) or len(data)> 998780 : 
+            return 0 ,0
+        b = json.loads(data)
+        sommeb = 0
+        sommed = 0
+        
+        if 'chiffrageDommages' in b.keys():
+            chiffrage = b['chiffrageDommages']
+        elif 'chiffragesV2' in b.keys():
+            chiffrage = b['chiffragesV2']
+        else:
+            return sommeb, sommed
+        if type(chiffrage) != type(None):
+            if 'dommages' in chiffrage:
+                if type(chiffrage['dommages']) != type(None):
+                    for a in chiffrage['dommages']:
+                        if 'details' in a and a['details'] is not None:
+                            for detail in a['details']:
+                                sommed += detail.get('montantTTC', 0)
+                        else:
+                            sommed += a.get('montantTTC', 0)
+    
+            if 'biens' in chiffrage:
+                if type(chiffrage['biens']) != type(None):
+                    for a in chiffrage['biens']:
+                        if 'detailBiens' in a and a['detailBiens'] is not None:
+                            for detail in a['detailBiens']:
+                                sommeb += detail.get('valeurANeufEstimation', 0)
+    
+        return sommeb, sommed
+    """)
+    st.write("""Pendant le développement de cette solution j'ai sue prouver que je maitrise plusieurs des compétences 
+            que j'ai apprise pendant mes 3 année de BUT.  """)
+    st.write("Nous pouvons donc dénombrer les compétences, absente de la preuve 1, suivante :")
+    st.write("Compétence 1 « Traiter des données à des fins décisionnelles »")
+    st.write("""
+    - En écrivant un programme correctement structuré et documenté, respectant les bonnes pratiques
+    """)
+    st.write("Compétence 2 « Analyser statistiquement des données »")
+    st.write("""
+    /n- Saisir l’importance de la mise en oeuvre de méthodes adaptée à des domaines et des données spécifiques (Marketing, Biostatistique, Statistique spatiale, Gestion …)
+    /n- Prendre conscience des limites des méthodes classiques pour l’analyse des données complexes (données massives, données mal structurées…)
+    /n- Défendre ses choix de solution par un argumentaire éclairé 
+    /n En expliquant le choix d'utilisation de python.
+    )
+    """)
