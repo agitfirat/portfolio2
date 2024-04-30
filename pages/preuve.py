@@ -172,5 +172,4 @@ with tab2 :
     /n- Prendre conscience des limites des méthodes classiques pour l’analyse des données complexes (données massives, données mal structurées…)
     /n- Défendre ses choix de solution par un argumentaire éclairé 
     /n En expliquant le choix d'utilisation de python.
-    )
     """)
