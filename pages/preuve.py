@@ -98,7 +98,8 @@ st.write("""- En identifiant et en mettant en œuvre les techniques adaptées au
 
 st.write("Compétence 3 : « Valoriser une production dans un contexte professionnel »")
 st.write(""" - En s’adaptant au niveau d’expertise, à la culture et au statut du destinataire & En utilisant la forme de restitution adaptée
-        & En réalisant des solutions de visualisation spécifiques aux données métier (Compétence 4)
+        & En réalisant des solutions de visualisation spécifiques aux données métier (Compétence 4) & En s’inscrivant dans une démarche de documentation des réalisations adaptée au public visé (Compétence 1)
+        &Prendre conscience de la nécessité d’intégrer la vision de l’interlocuteur (transversalité, international, multiculture, niveau d’expertise…)
         \nComme vous pouvez le voir sur notre application nous avons choisie aucun graphique compliqué, 
         des cartes et des tableaux, pour que même un collégien puisse utiliser notre appli. 
         \n- En s’exprimant correctement, aussi bien en français que dans une langue étrangère, à l'oral comme à l'écrit & Identifier les clés d'une bonne communication (procédures et techniques utilisées)
