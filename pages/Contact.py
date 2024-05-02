@@ -12,7 +12,7 @@ st.write("agitportfolio@gmail.com")
 
 # Lien vers LinkedIn
 st.subheader("Profil LinkedIn")
-st.markdown("[Lien vers mon profil LinkedIn](https://www.linkedin.com/in/agit-firat-morcicek-397499233/")
+st.markdown("[Lien vers mon profil LinkedIn](https://www.linkedin.com/in/agit-firat-morcicek-397499233/)")
 
 # Formulaire de contact
 st.subheader("Formulaire de Contact")
